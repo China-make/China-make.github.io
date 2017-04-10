@@ -1,0 +1,10 @@
+
+##### 进入容器：
+> docker exec -it 'ID'  bash
+
+##### 导出镜像：
+
+> docker save -o jenkins.04.07 jenkins
+
+##### 导入镜像
+> docker load < jingxiang 

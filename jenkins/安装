@@ -1,0 +1,11 @@
+
+1、使用docker安装：
+>  docker pull jenkins
+
+使用此映像运行容器并将数据目录从容器映射到主机;
+例如在下面的示例中/var/jenkins_home，jenkins/容器从主机上的当前路径映射到目录。
+使用此映像运行容器并将数据目录从容器映射到主机; jenkins8080端口映射到宿主机的49001
+
+> docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home -t jenkins
+
+jenkins 首次启动时会产出一个随机的密码
